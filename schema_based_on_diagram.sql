@@ -11,4 +11,10 @@ CREATE TABLE medical_histories (
   admitted_at TIMESTAMP,
   patient_id INT,
   status VARCHAR (50)
+);
+
+CREATE TABLE treatments (
+  id INT PRIMARY IDENTITY,
+  type VARCHAR (50),
+  name VARCHAR (100),
 )
