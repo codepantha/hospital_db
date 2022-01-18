@@ -55,6 +55,6 @@ CREATE TABLE medical_historie_treatments (
 CREATE INDEX ON medical_histories(patient_id);
 CREATE INDEX ON invoice_items(treatment_id);
 CREATE INDEX ON invoices(medical_history_id);
-INDEX ON invoice_items (invoice_id);
-INDEX ON medical_historie_treatments (medical_history_id);
-INDEX ON medical_historie_treatments (treatment_id);
+CREATE INDEX ON invoice_items (invoice_id);
+CREATE INDEX ON medical_historie_treatments (medical_history_id);
+CREATE INDEX ON medical_historie_treatments (treatment_id);
